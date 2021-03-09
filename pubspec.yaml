@@ -23,11 +23,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  bloc_test: any
   cupertino_icons: ^1.0.2
   firebase_auth: ^1.0.0
   firebase_core: ^1.0.0
   flutter_bloc: any
   provider: ^5.0.0
+  test: any
 
 dev_dependencies:
   flutter_test:

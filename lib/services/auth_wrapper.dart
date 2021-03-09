@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login_bloc/screens/create_new_account_screen.dart';
+import 'package:login_bloc/screens/sign_in_page.dart';
 import 'package:login_bloc/screens/succuss_screen.dart';
 import 'package:login_bloc/services/auth_service.dart';
 import 'package:provider/provider.dart';
@@ -14,7 +14,7 @@ class AuthWrapper extends StatelessWidget {
         if (snapshot.connectionState == ConnectionState.active) {
           AppUser user = snapshot.data;
           if (user == null) {
-            return CreateNewAccount();
+            return SignInPage();
           } else {
             return SuccussScreen();
           }
